@@ -1,0 +1,113 @@
+.bui-pc-clipupload {
+    position: relative;
+    .select-btn {
+        display: none;
+    }
+    .popup{
+        display: none;  
+        position: absolute;
+        padding: 10px;
+        box-shadow: 0 0 10px 0px rgba(0,0,0,.2);
+        background: #fff;
+        z-index: 20;
+        &.showPop {
+            display: inline-block;
+        }
+        .img {
+            position: relative;
+            border: 1px solid #ccc;
+        }
+        .mask-con {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+        .clip-con {
+            position: absolute;
+            cursor: move;
+            text-align: center;
+            left: 0;
+            top: 0;
+            z-index: 2;
+            border: 1px dashed #333;
+            font-size: 20px;
+            color: #fff;
+            font-weight: bold;
+            user-select: none; 
+            -webkit-user-select: none; 
+        }
+        .point {
+            position: absolute;
+            height: 6px;
+            width: 6px;
+            border: 1px solid #333;
+            background: #fff;
+            &.left-top {
+                left: -5px;
+                top: -5px;
+                cursor: nw-resize;
+            }
+            &.top {
+                top: -5px;
+                left: 50%;
+                margin-left: -5px;
+                cursor: n-resize;
+            }
+            &.right-top {
+                top: -5px;
+                right: -5px;
+                cursor: ne-resize;
+            }
+            &.left-center {
+                left: -5px;
+                top: 50%;
+                margin-top: -5px;
+                cursor: w-resize;
+            }
+            &.right-center {
+                right: -5px;
+                top: 50%;
+                margin-top: -5px;
+                cursor: e-resize;
+            }
+            &.left-bottom {
+                bottom:-5px;
+                left: -5px;
+                cursor: sw-resize;
+            }
+            &.bottom {                
+                bottom: -5px;
+                left: 50%;
+                margin-left: -5px;   
+                cursor: s-resize;             
+            }
+            &.right-bottom {
+                bottom: -5px;
+                right: -5px;
+                cursor: se-resize;
+            }
+        }
+        .mask {
+            position: absolute;
+            background: rgba(0,0,0,.5);
+        }
+    }
+    .btn-group {
+        text-align: center;
+        padding: 20px 0 10px;
+    }
+    .btn {
+        margin: 0 5px;
+    }
+    .preview-canvas {
+        display: block;
+    }
+    .clip-canvas {
+        display: none;
+    }
+    .display-img {
+        display: block;
+    }
+}

@@ -1,0 +1,16 @@
+.toast {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin-left: -1.5rem;
+    font-size: 0.14rem;
+    background: rgba(0, 0, 0, .6);
+    color: #fff;
+    width: 3rem;
+    padding: 0.1rem;
+    text-align: center;
+    z-index: 100;
+    &.hide {
+        display: none;
+    }
+}

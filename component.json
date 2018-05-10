@@ -1,0 +1,256 @@
+{
+  "components": [
+    {
+      "english": "dialog",
+      "chinese": "对话框",
+      "author": "廖艳丽",
+      "erp": "liaoyanli5",
+      "email": "liaoyanli@jd.com",
+      "client": "M&PC",
+      "type": "dynamic"
+    },
+    {
+      "english": "toast",
+      "chinese": "提示框",
+      "author": "杨磊",
+      "erp": "yanglei95",
+      "email": "yanglei27@@jd.com",
+      "client": "M&PC",
+      "type": "dynamic"
+    },
+    {
+      "chinese": "按钮",
+      "english": "button",
+      "type": "show",
+      "author": "廖艳丽",
+      "erp": "liaoyanli5",
+      "client": "M&PC",
+      "email": "liaoyanli5@jd.com"
+    },
+    {
+      "chinese": "输入框",
+      "english": "input",
+      "type": "show",
+      "client": "M&PC",
+      "author": "廖艳丽",
+      "erp": "liaoyanli5",
+      "email": "liaoyanli@jd.com"
+    },
+    {
+      "chinese": "上传组件",
+      "english": "Upload",
+      "type": "dynamic",
+      "client": "M&PC",
+      "author": "杨磊",
+      "erp": "yanglei95",
+      "email": "yanglei27@jd.com"
+    },
+    {
+      "chinese": "日历组件",
+      "english": "calendar",
+      "type": "dynamic",
+      "client": "PC",
+      "author": "秦伟伟",
+      "erp": "qinweiwei3",
+      "email": "qinweiwei@jd.com"
+    },
+    {
+      "chinese": "提示",
+      "english": "tips",
+      "type": "dynamic",
+      "client": "M&PC",
+      "author": "秦伟伟",
+      "erp": "qinweiwei3",
+      "email": "qinweiwei@jd.com"
+    },
+    {
+      "chinese": "有限/无限加载",
+      "english": "limitedInfiniteLoad",
+      "type": "dynamic",
+      "client": "M&PC",
+      "author": "宋成林",
+      "erp": "songchenglin3",
+      "email": "songchenglin1@jd.com"
+    },
+    {
+      "chinese": "遮罩",
+      "english": "Mask",
+      "type": "show",
+      "client": "M",
+      "author": "叶文文",
+      "erp": "yewenwen3",
+      "email": "yewenwen1@jd.com"
+    },
+    {
+      "chinese": "抽屉式多级选择",
+      "english": "choose",
+      "type": "business",
+      "client": "M",
+      "author": "廖艳丽",
+      "erp": "liaoyanli5",
+      "email": "liaoyanli@jd.com"
+    },
+    {
+      "chinese": "返回顶部",
+      "english": "scrollToTop",
+      "type": "util",
+      "client": "M&PC",
+      "author": "孙印凤",
+      "erp": "sunyinfeng",
+      "email": "sunyinfeng@jd.com"
+    },
+    {
+      "chinese": "裁切上传组件",
+      "english": "clipUpload",
+      "type": "dynamic",
+      "client": "PC",
+      "author": "杨磊",
+      "erp": "yanglei95",
+      "email": "yanglei27@jd.com"
+    },
+    {
+      "chinese": "加载中",
+      "english": "loading",
+      "type": "dynamic",
+      "client": "M&PC",
+      "author": "胡颖超",
+      "erp": "huyingchao3",
+      "email": "huyingchao@jd.com"
+    },
+    {
+      "chinese": "输入提示下拉框",
+      "english": "Suggest",
+      "type": "dynamic",
+      "client": "M",
+      "author": "孙印凤",
+      "erp": "sunyinfeng",
+      "email": "sunyinfeng@jd.com"
+    },
+    {
+      "chinese": "至顶",
+      "english": "GoTop",
+      "type": "dynamic",
+      "client": "M&PC",
+      "author": "胡颖超",
+      "erp": "huyingchao3",
+      "email": "huyingchao@jd.com"
+    },
+    {
+      "chinese": "单选",
+      "english": "Radio",
+      "type": "show",
+      "client": "M&PC",
+      "author": "廖艳丽",
+      "erp": "liaoyanli5",
+      "email": "liaoyanli@jd.com"
+    },
+    {
+      "chinese": "搜索框",
+      "english": "searchBar",
+      "type": "dynamic",
+      "client": "M",
+      "author": "叶文文",
+      "erp": "yewenwen3",
+      "email": "yewenwen1@jd.com"
+    },
+    {
+      "chinese": "固钉",
+      "english": "affix",
+      "type": "dynamic",
+      "client": "M&PC",
+      "author": "宋成林",
+      "erp": "songchenglin3",
+      "email": "songchenglin1@jd.com"
+    },
+    {
+      "chinese": "签字",
+      "english": "signature",
+      "type": "dynamic",
+      "client": "M&PC",
+      "author": "宋成林",
+      "erp": "songchenglin3",
+      "email": "songchenglin1@jd.coom"
+    },
+    {
+      "chinese": "页签切换",
+      "english": "Tab",
+      "type": "dynamic",
+      "client": "M&PC",
+      "author": "孙印凤",
+      "erp": "sunyinfeng",
+      "email": "sunyinfeng@jd.com"
+    },
+    {
+      "chinese": "多选",
+      "english": "Checkbox",
+      "type": "show",
+      "client": "M&PC",
+      "author": "廖艳丽",
+      "erp": "liaoyanli5",
+      "email": "liaoyanli5@jd.com"
+    },
+    {
+      "chinese": "层级选择",
+      "english": "cascadar",
+      "type": "dynamic",
+      "client": "PC",
+      "author": "杨磊",
+      "erp": "yanglei95",
+      "email": "yanglei27@jd.com"
+    },
+    {
+      "chinese": "翻页",
+      "english": "pagination",
+      "type": "dynamic",
+      "client": "PC",
+      "author": "曹晋",
+      "erp": "caojin15",
+      "email": "caojin1@jd.com"
+    },
+    {
+      "chinese": "电梯楼层组件",
+      "english": "elevator",
+      "type": "dynamic",
+      "client": "M",
+      "author": "甄玉磊",
+      "erp": "zhenyulei",
+      "email": "zhenyulei@jd.com"
+    },
+    {
+      "chinese": "动画滑屏翻页组件",
+      "english": "FlipPage",
+      "type": "dynamic",
+      "client": "M",
+      "author": "宋成林",
+      "erp": "songchenglin3",
+      "email": "songchenglin1@jd.com"
+    },
+    {
+      "chinese": "图标",
+      "english": "icon",
+      "type": "dynamic",
+      "client": "M&PC",
+      "author": "杨磊",
+      "erp": "yanglei95",
+      "email": "yanglei27@jd.com"
+    },
+    {
+      "chinese": "折叠面板",
+      "english": "collapse",
+      "type": "dynamic",
+      "client": "PC",
+      "author": "杜守珺",
+      "erp": "bjdushoujun",
+      "email": "dushoujun@jd.com"
+    },
+    {
+      "chinese": "步骤条",
+      "english": "Steps",
+      "type": "business",
+      "client": "PC",
+      "author": "杜守珺",
+      "erp": "bjdushoujun",
+      "email": "dushoujun@jd.com"
+    }
+  ]
+}

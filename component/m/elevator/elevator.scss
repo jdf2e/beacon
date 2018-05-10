@@ -1,0 +1,64 @@
+.nut-elevator{
+        overflow: scroll;
+        background:#FFF; 
+    }
+    .nut-elevator-ul{
+        width: 100%;
+        padding:0px;
+        margin:0px; 
+    }
+    .nut-list-title{
+        list-style-type:none;
+        width:100%;
+        margin-bottom:0.2rem;
+    }
+    .nut-list-h{
+        height: 0.3rem;
+        line-height: 0.3rem;
+        padding-left: 0.2rem;
+        background: #eee;
+        margin: 0;
+    }
+    .nut-people-list{
+        padding: 0;
+        padding-left: 0.2rem;
+    }
+    .nut-list-name{
+        font-size: 16px;
+        list-style-type:none;
+        height: 0.4rem;
+        line-height: 0.4rem;
+        border-bottom: 1px solid #ccc;
+    }
+    .nut-elevator-nav{
+        background: #fff;
+        text-align: center;
+        border:1px solid #ccc;
+        width: 0.5rem;
+        position:fixed;
+        top:50%;
+        right: 0px;
+        transform:translate(0, -50%);
+        padding: 0px;
+        z-index: 100;
+        .nut-nav-list{
+            font-size: 0.16rem;
+            list-style-type:none;
+            height: 0.4rem;
+            line-height: 0.4rem;
+        }
+    }
+    .nut-big-box{
+        width: 0.26rem;
+        height: 0.26rem;
+        background: #000;
+        opacity: 0.7;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform:translate(-50%, -50%);
+        text-align: center;
+        line-height: 0.26rem;
+        color:#fff;
+        font-family: bold;
+    }

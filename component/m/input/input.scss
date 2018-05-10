@@ -1,0 +1,9 @@
+@import './../../_variable.scss'; //多端风格公用参数
+@import './../_variable.scss'; //终端特有公用样式
+.bui-m-input {
+    input {
+        border: 1px solid #ededed;
+        border-radius: $borderRadius;
+        font-size: .14rem;
+    }
+}

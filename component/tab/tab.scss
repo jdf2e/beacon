@@ -1,0 +1,70 @@
+.bui-pc-tab {
+}
+.bui-m-tab {
+	.tabs-title {
+		height: .33rem;
+		border-bottom: 1px solid #ddd;
+	}
+	.tabs-nav {
+		li {
+			display: block;
+			float: left;
+			position: relative;
+			text-decoration: none;
+			margin-bottom: -1px;
+			a {
+				display: block;
+				padding: .1rem .15rem;
+				position: relative;
+				border: 1px solid transparent;
+				cursor: pointer;
+				&.active{
+					color: #61dafb;
+					font-weight: bold;
+				    //background-color: #61dafb;
+				    border-bottom: .02rem solid #61dafb;
+				    //border: 1px solid #ddd;
+				    //border-bottom-color: #fff;
+				    border-radius: .02rem;
+				    cursor: default;
+				}
+				&:hover {
+					color: #61dafb;
+				}
+			}
+		}
+	}
+}
+.tab-vertical {
+	overflow: hidden;
+	height: auto;
+	.tabs-title {
+		float: left;
+		width: .8rem;
+		height: auto;
+		border-bottom: none;
+		text-align: center;
+	}
+	.tabs-nav {
+		li {
+			float: none;
+			a:hover {
+				background-color: #61dafb;
+				color: #fff;
+			}
+			a.active{
+					color: #fff;
+					font-weight: bold;
+				    background-color: #61dafb;
+				    //border-bottom: .02rem solid #61dafb;
+				    //border: 1px solid #ddd;
+				    //border-bottom-color: #fff;
+				    border-radius: .02rem;
+				    cursor: default;
+				}
+		}
+	}
+	.tabs-active-content {
+		margin-left: 1rem;
+	}
+}
