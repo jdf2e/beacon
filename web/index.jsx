@@ -44,13 +44,10 @@ import CascadarPC from './page/pc/cascadar/cascadar';
 import PaginationPC from './page/pc/pagination/pagination';
 import ElevatorM from './page/m/elevator/elevator';
 import FlippageM from './page/m/flippage/flippage';
-<<<<<<< HEAD
 import IconM from './page/m/icon/icon';
 import IconPC from './page/pc/icon/icon';
-=======
 import CollapsePC from './page/pc/collapse/collapse';
 import StepsPC from './page/pc/steps/steps';
->>>>>>> 136663c70a4b4c769819ffa95841b6676852d3a7
 
 import './assets/index.scss';
 import Utils from './../tools/utils';
@@ -78,12 +75,9 @@ const Pc = ({ match }) => (
 <Route path={`${match.url}/checkbox`} component={CheckboxPC}/>
 <Route path={`${match.url}/cascadar`} component={CascadarPC}/>
 <Route path={`${match.url}/pagination`} component={PaginationPC}/>
-<<<<<<< HEAD
 <Route path={`${match.url}/icon`} component={IconPC}/>
-=======
 <Route path={`${match.url}/collapse`} component={CollapsePC}/>
 <Route path={`${match.url}/steps`} component={StepsPC}/>
->>>>>>> 136663c70a4b4c769819ffa95841b6676852d3a7
 
         </div>
     </div>

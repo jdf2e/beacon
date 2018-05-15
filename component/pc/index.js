@@ -17,9 +17,6 @@ export { default as Checkbox }from './checkbox/checkbox';
 export { default as Cascadar }from './cascadar/cascadar';
 export { default as Pagination }from './pagination/pagination';
 export { default as Limitedinfiniteload }from './limitedinfiniteload/limitedinfiniteload';
-<<<<<<< HEAD
 export { default as Icon }from './icon/icon';
-=======
 export { default as Collapse }from './collapse/collapse';
 export { default as Steps }from './steps/steps';
->>>>>>> 136663c70a4b4c769819ffa95841b6676852d3a7
