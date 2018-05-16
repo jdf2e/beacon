@@ -7,7 +7,7 @@ export default class Footer extends React.Component {
    	render() {
      	return (
              <div className="footer">
-                <div className="w">
+                <div className="w hh">
                     <div className="m">
                         <div className="mt">
                             <p>友情链接：</p>
@@ -40,9 +40,12 @@ export default class Footer extends React.Component {
                             <a target="_blank" href="/">电话：010-8911 1111</a>
                         </div>
                     </div>
-                    <div className="m">
+                    <div className="m q">
+                        <b className="qrcode"></b>
+                        <span className="qrcode-txt">扫一扫 立刻体验</span>
                     </div>
-                </div>
+                 </div>
+                 <div className="footer-f">Copyright @ 2018 JD.COM 京东 版权所有</div>
             </div>
      	);
   	}
