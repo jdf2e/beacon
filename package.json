@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Beacon UI for React",
   "main": "app.jsx",
-  "publicPath": "//static.360buyimg.com/exploit/beacon-ui",
+  "publicPath": "",
   "ftpServer": "static.360buyimg.com/exploit/beacon-ui",
   "ftpTarget": "page.jd.com/exploit/beacon-ui",
   "scripts": {
