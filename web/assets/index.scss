@@ -154,8 +154,6 @@ body {
     }
 }
 
-.right {}
-
 .side-nav {
     display: inline-block;
     vertical-align: top;
@@ -361,18 +359,18 @@ pre {
 }
 
 .right {
-    width: 78%;
+    width: 75%;
     float: right;
     min-height: 100%;
     position: relative;
     box-sizing: border-box;
-    padding: 0 20px;
+    margin: 0 20px;
     &:before {
         content: '';
         position: absolute;
         top: 0;
         bottom: 0;
-        left: -20px;
+        left: -40px;
         width: 0;
         border-left: 1px solid $borderColor;
     }
@@ -616,7 +614,7 @@ pre[class*="language-"] {
 }
 
 .m-demo {
-    height: 440px;
+    padding-left: 30px;
     .iphone {
         width: 371px;
         height: 726px;
@@ -628,6 +626,34 @@ pre[class*="language-"] {
 }
 
 .demo-code {
-    float: left;
-    margin-left: 30px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    text-align: center;
+    z-index: 4;
+    cursor: pointer;
+    .demo-img-wrap {
+        position: relative;
+    }
+    .demo-mask {
+        visibility: hidden;
+        position: absolute;
+        left: 0;
+        top: 0;
+        background: rgba(0, 0, 0, .3);
+        width: 100%;
+        height: 100%;
+        color: #fff;
+        text-align: center;
+        line-height: 150px;
+        a {
+            color: #fff;
+            text-decoration: none;
+        }
+    }
+    .demo-img-wrap:hover {
+        .demo-mask {
+            visibility: visible;
+        }
+    }
 }

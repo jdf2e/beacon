@@ -19,8 +19,14 @@ constructor(props) {
 render() {    
   return (
     <div className="wrapper">
-          <Button type="link" size="l">链接式按钮</Button><Button type="link" size="m"  style={{marginLeft:"10px"}}>链接式按钮</Button><Button type="link" size="s"  style={{marginLeft:"10px"}}>链接式按钮</Button><br/><br/>
-          <Button type="submit" size="l">提交式按钮</Button><Button type="submit" size="m"  style={{marginLeft:"10px"}}>提交式按钮</Button><Button type="submit" size="s"  style={{marginLeft:"10px"}}>提交式按钮</Button><br/><br/>
+          <Button type="link" size="l">链接式按钮</Button>
+          <Button type="link" size="m"  style={{marginLeft:"10px"}}>链接式按钮</Button>
+          <Button type="link" size="s"  style={{marginLeft:"10px"}}>链接式按钮</Button>
+          <br/><br/>
+          <Button type="submit" size="l">提交式按钮</Button>
+          <Button type="submit" size="m"  style={{marginLeft:"10px"}}>提交式按钮</Button>
+          <Button type="submit" size="s"  style={{marginLeft:"10px"}}>提交式按钮</Button>
+          <br/><br/>
           <Button>默认类型按钮</Button><br/><br/>     
     </div>
   );

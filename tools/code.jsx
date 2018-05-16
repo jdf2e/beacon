@@ -32,7 +32,7 @@ export default class Canvas extends React.Component {
     let hash = urlParams.hash;
     let codeUrl = `http://${urlParams.host}${urlParams.port?':'+urlParams.port:''}/demo.html${urlParams.relative}`;
     let client = /^\/m/.test(hash)?'M':'PC';
-     QRCode.toDataURL(codeUrl,{width: 300,height: 300,margin: 2})
+     QRCode.toDataURL(codeUrl,{width: 150,height: 150,margin: 0})
     .then(url => {
         this.setState({
           codeUrl:url
@@ -95,14 +95,17 @@ export default class Canvas extends React.Component {
         <div className="source" id={this.playerId} style={{display: client=='M'?'none':'block'}}/>
         {client =='M' && 
           <div className="m-demo">
+              <p className="demo-code-target">手机扫描二维码查看预览效果</p>
+              <p className="demo-code-target"></p>
             {/*<div className="iphone">
                 <iframe src={`demo.html#${hash}`} style={{border:0,width:350 + 'px',height: 622 + 'px'}}></iframe>
             </div>*/}
             
             <div className="demo-code">
-              <img src={codeUrl} alt=""/>
-              <p className="demo-code-label">手机扫描查看</p>
-              <p className="demo-code-target"><a href={`demo.html#${hash}`} className="new-target" target="_blank">新窗口打开</a></p>
+              <div className="demo-img-wrap">
+                <img src={codeUrl} alt=""/>
+                <div className="demo-mask"><a href={`demo.html#${hash}`} className="new-target" target="_blank">新窗口打开</a></div>
+              </div>
             </div>
           </div>
         }
