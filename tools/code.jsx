@@ -95,9 +95,9 @@ export default class Canvas extends React.Component {
         <div className="source" id={this.playerId} style={{display: client=='M'?'none':'block'}}/>
         {client =='M' && 
           <div className="m-demo">
-            <div className="iphone">
+            {/*<div className="iphone">
                 <iframe src={`demo.html#${hash}`} style={{border:0,width:350 + 'px',height: 622 + 'px'}}></iframe>
-            </div>
+            </div>*/}
             
             <div className="demo-code">
               <img src={codeUrl} alt=""/>

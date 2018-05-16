@@ -4372,8 +4372,8 @@ APSD/9k=" transform="matrix(0.24 0 0 0.24 -207.8862 -327.9377)">
                 </div>
 				<div className="r">
 					<a href="demo.html" className="link" target="_blank">查看M端demo</a>
-					<Link to={'/m'} className="link">M端</Link>
-					<Link to={'/pc'} className="link">PC端</Link>
+					<Link to={'/m/button'} className="link">M端</Link>
+					<Link to={'/pc/button'} className="link">PC端</Link>
 				</div>
             </div>
      	);
