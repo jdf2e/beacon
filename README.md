@@ -22,9 +22,4 @@ npm run dev
 npm run build
 ```
 
-*   如果项目需要兼容华为等手机自带的部分低端浏览器请在 router.jsx 中引入“babel-polyfill”
-```
-import babel-polyfill
-```
-副作用是使压缩后的代码体积增大90k左右
 
