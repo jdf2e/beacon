@@ -25,33 +25,33 @@ body {
     width: 100%;
     .content {
         box-sizing: border-box;
+        margin-top: 30px;
     }
     .header {
-        height: 60px;
-        background-color: #20232a;
-        color: #61dafb;
+        height: 64px;
         top: 0;
         left: 0;
         width: 100%;
-        line-height: 80px;
+        line-height: 64px;
         position: relative;
+        box-shadow: 0 0 20px 5px rgba(78, 165, 255, 0.15);
         .logo {
-            color: #61dafb;
             text-decoration: none;
-            display: block;
+            float: left;
+            height: 64px;
             position: relative;
-            margin: 0;
+            margin-left: 40px;
             font-size: 32px;
             font-weight: 400;
             svg {
-                width: 225px;
-                height: 80px;
+                width: 200px;
+                height: 64px;
             }
         }
         .nav {
             float: right;
             height: 100%;
-            line-height: 80px;
+            line-height: 64px;
             background: transparent;
             padding: 0;
             margin: 0;
@@ -104,7 +104,7 @@ body {
             right: 20px;
             top: 0px;
             .link {
-                color: #fff;
+                color: $mainColor;
                 margin-left: 10px;
             }
         }
@@ -326,12 +326,12 @@ pre {
 .menu {
     width: 17%;
     float: left;
+    margin-left: 40px;
     min-height: 100%;
     .m-t {
-        padding-left: 10px;
         line-height: 44px;
-        color: #333;
-        border-bottom: 1px solid $borderColor;
+        font-size: 14px;
+        font-weight: normal;
     }
     .m-list {
         list-style: none;
@@ -345,44 +345,42 @@ pre {
     }
     li {
         line-height: 40px;
-        border-bottom: 1px solid $borderColor;
-        padding-left: 20px;
+        padding-left: 25px;
         &:hover {
-            background: $mainColor;
             a {
-                color: #fff;
+                color: $mainColor;
             }
         }
         &.active {
-            background: $mainColor;
             a {
-                color: #fff;
+                color: $mainColor;
+                font-weight: bold;
             }
         }
     }
 }
 
 .right {
-    width: 82%;
+    width: 78%;
     float: right;
     min-height: 100%;
     position: relative;
     box-sizing: border-box;
-    padding: 20px;
+    padding: 0 20px;
     &:before {
         content: '';
         position: absolute;
         top: 0;
         bottom: 0;
-        left: -11px;
+        left: -20px;
         width: 0;
         border-left: 1px solid $borderColor;
     }
     display: inline-block;
     vertical-align: top;
     h2 {
-        font-size: 28px;
-        color: #1f2d3d;
+        font-size: 30px;
+        color: #666;
         margin: 0;
     }
     h3 {
