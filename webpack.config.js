@@ -27,6 +27,7 @@ webpackConfig.entry = {
         'react-router',
         'react-router-dom'
     ],
+    app: ['./web/app.jsx'],
     index: ['./web/index.jsx'],
     demo: ['./web/demo.jsx']
 
@@ -94,6 +95,11 @@ webpackConfig.module = {
 
 webpackConfig.plugins = [
     new CleanWebpackPlugin('build'),
+    new HtmlWebpackPlugin({
+        filename: './app.html',
+        chunks: ["vender", "app"],
+        template: './web/app.html'
+    }),
     new HtmlWebpackPlugin({
         filename: './index.html',
         chunks: ["vender", "index"],
