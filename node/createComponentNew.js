@@ -309,7 +309,7 @@ create.createChineseName().then(() => { //组件名产生
         promiseArr.push(appendToIndex(componentParams));
         Promise.all(promiseArr).then((values) => {
             let writePromiseArr = [];
-            writePromiseArr.push(appendToRouter('index.jsx', indexCode()));
+            writePromiseArr.push(appendToRouter('app.jsx', indexCode()));
             writePromiseArr.push(appendToRouter('demo.jsx', demoCode()))
             Promise.all(writePromiseArr).then(() => {
                 process.exit();
