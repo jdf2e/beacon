@@ -1,0 +1,23 @@
+@import './../../_variable.scss';
+@import './../_variable.scss';
+.bui-button {
+    display: inline-block;
+    border-radius: $borderRadius;
+    background: $skinColor;
+    border: 1px solid $skinColor;
+    color: #fff;
+    font-size: .14rem;
+    text-align: center;
+    &:hover {
+        color: #fff;
+    }
+    &.bui-button-s {
+        padding: 2px 5px;
+    }
+    &.bui-button-m {
+        padding: 6px 12px;
+    }
+    &.bui-button-l {
+        padding: 10px 20px;
+    }
+}

@@ -1,0 +1,73 @@
+// .bui-pc-gotop {
+
+// }
+// .bui-m-gotop {
+
+// }
+.bui-back-top{
+    font-size: 14px;
+    line-height: 1.5;
+    color: rgba(0,0,0,.65);
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    z-index: 10;
+    position: fixed;
+    right: 100px;
+    bottom: 50px;
+    height: 40px;
+    width: 40px;
+    cursor: pointer;
+}
+.bui-back-top-content{
+    height: 40px;
+    width: 40px;
+    border-radius: 20px;
+    background-color: rgba(0,0,0,.45);
+    color: #fff;
+    text-align: center;
+    overflow: hidden;
+    &:hover{
+        -webkit-transition: all .3s cubic-bezier(.645,.045,.355,1);
+        transition: all .3s cubic-bezier(.645,.045,.355,1);
+    }
+}
+.bui-back-top-icon{
+    // margin: 12px auto;
+    display: inline-block;
+    width: 34px;
+    height: 35px;
+    background: url('//misc.360buyimg.com/mtd/pc/o2_toolbar/1.0.0/home/images/toolbars.png') no-repeat;
+    background-position: -48px -250px;
+    vertical-align: middle;
+}
+
+// demo
+.bui-back-top-demo{
+    font-size: 14px;
+    line-height: 1.5;
+    color: rgba(0,0,0,.65);
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    z-index: 10;
+    position: fixed;
+    right: 100px;
+    bottom: 100px;
+    height: 40px;
+    width: 40px;
+    cursor: pointer;
+}
+.bui-back-top-demo-content{
+    // padding: 5px 10px;
+    line-height: 40px;
+    border-radius: 4px;
+    background-color: #1088e9;
+    color: #fff;
+    text-align: center;
+    font-size: 20px;
+}

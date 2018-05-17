@@ -1,0 +1,33 @@
+.bui-pc-collapse {
+	border:1px solid #ddd;
+	margin-top: -1px;
+	.collapse-title{
+		height: 20px;
+		line-height: 20px;
+		padding:10px;
+		svg{
+			margin-right: 5px;
+			transition:all ease 0.2s;
+			transform:translateY(-2px) rotate(-90deg);
+		}
+	}
+	.collapse-content{
+		height: 0;
+		overflow: hidden;
+		transition:all ease 0.5s;
+	}
+	.collapse-detail{
+		line-height: 20px;
+		padding:10px;
+		border-top: 1px solid #ddd;
+	}
+}
+.bui-pc-collapse-open{
+	.collapse-title svg{
+		transform:rotate(0deg);
+	}
+}
+.bui-pc-collapse-disabled{
+	cursor:not-allowed;
+	color:#999;
+}

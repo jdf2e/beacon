@@ -1,0 +1,45 @@
+.bui-pc-input {
+    position: relative;
+    display: inline-block;
+    input,
+    .placeholder {
+        height: 18px;
+        padding: 11px 10px;
+        width: 200px;
+        line-height: 18px;
+    }
+    input {
+        border-radius: 4px;
+        background: #ededed;
+        border: none;
+        &:focus {
+            outline: none;
+        }
+        &.txt-short {
+            width: 100px;
+        }
+    }
+    .placeholder {
+        display: block;
+        position: absolute;
+        left: 0;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        color: #999;
+        z-index: 1;
+    }
+}
+
+.txt-inp {}
+
+input:-webkit-autofill {
+    background-color: #ededed !important;
+    -webkit-box-shadow: 0 0 0 1000px #ededed inset;
+}
+
+.l-wrap {
+    input:-webkit-autofill {
+        -webkit-box-shadow: 0 0 0 1000px #fff inset;
+    }
+}

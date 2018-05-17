@@ -1,0 +1,36 @@
+.bui-pc-upload {
+    position: relative;
+    display: inline-block;
+    margin: 10px;
+    z-index: 10;
+    object {
+        opacity: 0;
+    }
+    .file-btn {
+        display: none;
+    }
+    .display-btn {
+        display: inline-block;
+    }
+    .btn {
+        cursor: pointer;
+        width: 107px;
+        height: 36px;
+        line-height: 36px;
+        border: none;
+        font-size: 14px;
+        color: #fff;
+        background: #f44336;
+        outline: none;
+        &:hover {
+            background: #d22;
+        }
+        &:active {
+            background: #c11;
+        }
+    }
+    .upload-btn {
+    }
+}
+.bui-m-upload {
+}
