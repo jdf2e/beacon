@@ -36,7 +36,7 @@ export default class Footer extends React.Component {
                             <span>Contact Us</span>
                         </div>
                         <div className="mc">
-                            <a target="_blank" href="/">邮箱：yanglei27@jd.com</a>
+                            <a target="_blank" href="/">邮箱：beacon@jd.com</a>
                             <a target="_blank" href="/">电话：010-8911 1111</a>
                         </div>
                     </div>

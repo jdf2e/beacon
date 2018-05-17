@@ -21,7 +21,7 @@ export default class Feature extends React.Component {
                         </li>
                         <li className="item i3">
                             <b className="i3"></b>
-                            <h3>标准规范</h3>
+                            <h3>高质量代码</h3>
                             <p className="desc">长时间支持众多项目，并从中提炼出 精华造就，组件稳定易用。</p>
                         </li>
                     </ul>
