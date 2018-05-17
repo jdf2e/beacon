@@ -1,4 +1,4 @@
-# Beacon-UI
+# Beacon
 
 > 基于react的组件库 1.0.0
 

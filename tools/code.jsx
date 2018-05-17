@@ -30,7 +30,8 @@ export default class Canvas extends React.Component {
     this.renderSource(this.source[2]);
     let urlParams = Utils.parseUrl(window.location.href);
     let hash = urlParams.hash;
-    let codeUrl = `http://${urlParams.host}${urlParams.port?':'+urlParams.port:''}/demo.html${urlParams.relative}`;
+    console.log(hash)
+    let codeUrl = `http://${urlParams.host}${urlParams.port?':'+urlParams.port:''}/demo.html#${hash}`;
     let client = /^\/m/.test(hash)?'M':'PC';
      QRCode.toDataURL(codeUrl,{width: 150,height: 150,margin: 0})
     .then(url => {

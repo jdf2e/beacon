@@ -13,8 +13,11 @@ class Button extends React.Component {
         let props = this.props;
         let state = this.state;
         let cls = classnames({
-            'bui-button': props.custom?false:true,
-            [`bui-button-${props.size}`]: props.custom?false:true,
+            'bui-button-m':  true,
+            'bui-button-default': props.custom || props.type=='link'?false:true,
+            'bui-button-link': props.type=='link'?true:false,
+            'bui-button-disabled': props.disabled,
+            [`bui-button-size-${props.size}`]: true,
             [props.custom]:props.custom?true:false
         });
         if(props.type == 'link'){
@@ -22,14 +25,28 @@ class Button extends React.Component {
                 <a className={cls} href={props.link}  style={props.style} onClick={props.onClick}>{props.children}</a>
             );
         }else if(props.type == 'submit'){
-            return (
-                <button className={cls}  style={props.style} onClick={props.onClick}>{props.children}</button>
-            );
+            if(props.disabled) {
+               return (
+                    <button className={cls} type="submit"  style={props.style} onClick={props.onClick} disabled>{props.children}</button>
+                );
+            } else {
+                return (
+                    <button className={cls} type="submit"  style={props.style} onClick={props.onClick}>{props.children}</button>
+                );
+            }
+            
         }
         else {
-            return (
-                <button className={cls} type="submit" style={props.style} onClick={props.onClick}>{props.children}</button>
-            );
+            if(props.disabled) {
+                return (
+                    <button className={cls} type="button" style={props.style} onClick={props.onClick} disabled>{props.children}</button>
+                );
+            } else {
+                return (
+                    <button className={cls} type="button" style={props.style} onClick={props.onClick}>{props.children}</button>
+                );
+            }
+            
         }
      	
   	}

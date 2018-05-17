@@ -1,23 +1,104 @@
-@import './../../_variable.scss';
 @import './../_variable.scss';
-.bui-button {
+.bui-button-m {
+    -webkit-transition: .5s all;
+    -o-transition: .5s all;
+    transition: .5s all;
     display: inline-block;
-    border-radius: $borderRadius;
-    background: $skinColor;
-    border: 1px solid $skinColor;
-    color: #fff;
+    cursor: pointer;
     font-size: .14rem;
     text-align: center;
-    &:hover {
+    text-decoration: none;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &.bui-button-default {
+        border-radius: $borderRadius;
+        background: $mainColor;
+        border: 1px solid $mainColor;
         color: #fff;
+        &:hover {
+            color: #fff;
+            background: $secondColor;
+            border-color: $secondColor;
+        }
+        &.bui-button-disabled,
+        &[disabled] {
+            cursor: not-allowed;
+            color: #b4b4b4;
+            background: #f5f5f5;
+            border-color: #f5f5f5;
+        }
     }
-    &.bui-button-s {
-        padding: 2px 5px;
+    &.bui-button-second {
+        border-radius: $borderRadius;
+        background: #fff;
+        border: 1px solid $mainColor;
+        color: $mainColor;
+        &:hover {
+            color: $mainColor;
+            background: $thirdColor;
+            border-color: $secondColor;
+        }
+        &.bui-button-disabled,
+        &[disabled] {
+            cursor: not-allowed;
+            color: #999;
+            background: #fff;
+            border-color: #999;
+        }
     }
-    &.bui-button-m {
-        padding: 6px 12px;
+    &.bui-button-third {
+        border-radius: $borderRadius;
+        background: #fff;
+        border: 1px dotted $mainColor;
+        color: $mainColor;
+        &:hover {
+            color: $mainColor;
+            background: $thirdColor;
+            border-color: $secondColor;
+        }
+        &.bui-button-disabled,
+        &[disabled] {
+            cursor: not-allowed;
+            color: #999;
+            background: #fff;
+            border-color: #999;
+        }
     }
-    &.bui-button-l {
-        padding: 10px 20px;
+    &.bui-button-danger {
+        border-radius: $borderRadius;
+        background: $otherColor;
+        border: 1px solid $otherColor;
+        color: #fff;
+        &:hover {
+            color: #fff;
+            background: $otherColorHover;
+            border-color: $otherColorHover;
+        }
+        &.bui-button-disabled,
+        &[disabled] {
+            cursor: not-allowed;
+            color: #b4b4b4;
+            background: #f5f5f5;
+            border-color: #f5f5f5;
+        }
+    }
+    &.bui-button-link {
+        border-radius: $borderRadius;
+        background: none;
+        color: $mainColor;
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+    &.bui-button-size-s {
+        padding: .1rem 0;
+    }
+    &.bui-button-size-m {
+        padding: .15rem 0;
+    }
+    &.bui-button-size-l {
+        padding: .18rem 0;
     }
 }

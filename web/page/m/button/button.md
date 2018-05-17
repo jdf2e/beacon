@@ -19,15 +19,25 @@ constructor(props) {
 render() {    
   return (
     <div className="wrapper">
-          <Button type="link" size="l">链接式按钮</Button>
-          <Button type="link" size="m"  style={{marginLeft:"10px"}}>链接式按钮</Button>
-          <Button type="link" size="s"  style={{marginLeft:"10px"}}>链接式按钮</Button>
-          <br/><br/>
-          <Button type="submit" size="l">提交式按钮</Button>
-          <Button type="submit" size="m"  style={{marginLeft:"10px"}}>提交式按钮</Button>
-          <Button type="submit" size="s"  style={{marginLeft:"10px"}}>提交式按钮</Button>
-          <br/><br/>
-          <Button>默认类型按钮</Button><br/><br/>     
+          <Button type="submit" size="l">主要按钮</Button>
+          <Button type="submit" size="m"  style={{marginTop:"0.1rem"}}>主要按钮</Button>
+          <Button type="submit" size="m" disabled={true} style={{marginTop:"0.1rem"}}>主要按钮</Button>
+          <Button type="submit" size="s"  style={{marginTop:"0.1rem"}}>主要按钮</Button>
+          <Button custom="bui-button-second" size="l" style={{marginTop:"0.1rem"}}>次要按钮</Button>
+          <Button custom="bui-button-second" size="m"  style={{marginTop:"0.1rem"}}>次要按钮</Button>
+          <Button custom="bui-button-second" size="m" disabled={true} style={{marginTop:"0.1rem"}}>次要按钮</Button>
+          <Button custom="bui-button-second" size="s"  style={{marginTop:"0.1rem"}}>次要按钮</Button>
+          <Button custom="bui-button-third" size="l" style={{marginTop:"0.1rem"}}>虚线按钮</Button>
+          <Button custom="bui-button-third" size="m"  style={{marginTop:"0.1rem"}}>虚线按钮</Button>
+          <Button custom="bui-button-third" size="m" disabled={true} style={{marginTop:"0.1rem"}}>虚线按钮</Button>
+          <Button custom="bui-button-third" size="s"  style={{marginTop:"0.1rem"}}>虚线按钮</Button>
+          <Button custom="bui-button-danger" size="l" style={{marginTop:"0.1rem"}}>危险按钮</Button>
+          <Button custom="bui-button-danger" size="m"  style={{marginTop:"0.1rem"}}>危险按钮</Button>
+          <Button custom="bui-button-danger" size="m" disabled={true} style={{marginTop:"0.1rem"}}>危险按钮</Button>
+          <Button custom="bui-button-danger" size="s"  style={{marginTop:"0.1rem"}}>危险按钮</Button>
+          <Button style={{marginTop:"0.1rem"}}>默认类型按钮</Button>
+          <Button type="link" size="l"  style={{marginTop:"0.1rem"}}>链接式按钮</Button>
+          <br/><br/>          
     </div>
   );
 }

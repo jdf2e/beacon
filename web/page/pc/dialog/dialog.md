@@ -5,8 +5,6 @@
 
 Dialog 弹出一个对话框。
 
-<a class="bui-button bui-button-m" href="demo.html#/dialog" target="_blank">新窗口打开</a>
-
 :::demo 
 
 ```js

@@ -30,8 +30,8 @@ export default class Menu extends React.Component {
                                     obj.list.map((com,j)=>{
                                         let english = com.english.toLowerCase();
                                         return (<li key={j} className={urlParams.hash.indexOf(`${english}`)>-1?'active':''}>
-                                            {type.toLowerCase() =='m' && <Link to={`/m/${english}`}>{Utils.titleCase(com.english)} {com.chinese}</Link>}
-                                            {type.toLowerCase() =='pc' && <Link to={`/pc/${english}`}>{Utils.titleCase(com.english)} {com.chinese}</Link>}
+                                            {type.toLowerCase() =='m' && <Link to={`/m/${english}`}><span className="c-english">{Utils.titleCase(com.english)}</span> <span className="c-chinese">{com.chinese}</span></Link>}
+                                            {type.toLowerCase() =='pc' && <Link to={`/pc/${english}`}><span className="c-english">{Utils.titleCase(com.english)}</span> <span className="c-chinese">{com.chinese}</span></Link>}
                                         </li>)
                                     })
                                 }
