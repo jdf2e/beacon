@@ -31,7 +31,7 @@ render() {
           	 <li>列表</li>
           	 <li>列表</li>
           </ul>
-          <Affix><div style={{border: '1px solid #eee', lineHeight: '40px', padding: '0 10px', backgroundColor: '#fff', fontSize: '14px'}}>我是固定标题</div></Affix>
+          <Affix><div style={{border: '1px solid #eee', lineHeight: '40px', padding: '0 10px', backgroundColor: '#fff', fontSize: '14px'}}>我是固定标题 </div></Affix>
           <ul style={{lineHeight: '30px', padding: '0 10px', backgroundColor: '#fff', fontSize: '14px'}}>
           	 <li>列表</li>
           	 <li>列表</li>
