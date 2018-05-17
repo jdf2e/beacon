@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { HashRouter, Route} from 'react-router-dom';
+import Footer from './includes/ifooter';
 import Header from './includes/header';
 import Menu from './includes/menu';
 import Index from './page/index/index';
@@ -53,7 +54,7 @@ import './assets/index.scss';
 import Utils from './../tools/utils';
 
 const Pc = ({ match }) => (
-    <div className="content">
+    <div className="content clearfix">
         <Menu type='PC'/>
         <div className="right">
             <Route path={`${match.url}/dialog`} component={DialogPC}/>
@@ -84,7 +85,7 @@ const Pc = ({ match }) => (
 );
 
 const M =  ({ match }) => (
-    <div className="content">
+    <div className="content clearfix">
         <Menu type='M'/>
         <div className="right">
             <Route path={`${match.url}/dialog`} component={DialogM}/>
@@ -121,6 +122,7 @@ ReactDOM.render((
             <Route path={'/'} exact component={Index} />
             <Route path={'/pc'} component={Pc}/>
             <Route path={'/m'} component={M} />
+            <Footer/>
         </div>
     </HashRouter>
     ),

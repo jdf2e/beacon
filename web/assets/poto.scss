@@ -126,7 +126,7 @@ body {
 
     }
 }
-.footer {
+.contact {
     margin-top: 120px;
     .hh {
         height: 205px;
@@ -190,12 +190,13 @@ body {
         color: #999;
         font-size: 12px;
     }
-    .footer-f {
-        display: block;
-        height: 90px;
-        line-height: 90px;
-        text-align: center;
-        font-size: 12px;
-        color: #999;
-    }
+}
+
+.footer {
+    display: block;
+    height: 90px;
+    line-height: 90px;
+    text-align: center;
+    font-size: 12px;
+    color: #999;
 }
