@@ -1,3 +1,87 @@
+@mixin box{
+    display:box;
+    display: -webkit-box;     
+    display: -moz-box;     
+    display: flex-box; 
+    display: -ms-flexbox; 
+    display: flex;      
+    display: -webkit-flex;   
+    display: -ms-flexbox; 
+}
+/* 水平排列 */
+@mixin box-horizontal{
+    -moz-box-orient:horizontal;
+    -webkit-box-orient:horizontal; 
+    box-orient:horizontal;
+    -moz-flex-direction:row;
+    -webkit-flex-direction:row;
+    flex-direction:row;
+}
+/* 垂直排列 */
+@mixin box-vertical{
+    -moz-box-orient:vertical;
+    -webkit-box-orient:vertical; 
+    box-orient:vertical;
+    -moz-flex-direction:column;
+    -webkit-flex-direction:column;
+    flex-direction:column;
+}
+ 
+/* 平均分配 */
+@mixin flex{
+  flex: 1;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  -webkit-box-flex: 1;
+}
+/* 垂直居中 */
+@mixin vertical-center{ 
+    box-align: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items:center;
+    -webkit-align-items:center;
+
+}
+/* 垂直靠上 */
+@mixin vertical-top{ 
+    box-align: start;
+    -webkit-box-align: start;
+    -ms-flex-align:  start;
+    align-items:flex-start;
+    -webkit-align-items:flex-start;
+
+}
+/* 垂直靠下 */
+@mixin vertical-bottom{ 
+    box-align: end;
+    -webkit-box-align: end;
+    -ms-flex-align:  end;
+    align-items:flex-end;
+    -webkit-align-items:flex-end;
+
+}
+/* 水平居中 */
+@mixin horizontal-center{
+    box-pack: center;
+    -webkit-box-pack: center;
+    justify-content:center;
+    -webkit-justify-content:center;
+}
+/* 水平靠右 */
+@mixin horizontal-end{
+    box-pack: end;
+    -webkit-box-pack: end;
+    justify-content:flex-end;
+    -webkit-justify-content:flex-end;
+}
+/* 两边对齐 */
+@mixin both-side{
+    box-pack: start;
+    -webkit-box-pack: start;
+    justify-content:space-between;
+    -webkit-justify-content:space-between;
+}
 .bui-pc-collapse {
 	border:1px solid #ddd;
 	margin-top: -1px;
@@ -30,4 +114,38 @@
 .bui-pc-collapse-disabled{
 	cursor:not-allowed;
 	color:#999;
+}
+.bui-pc-collapse-wrap{
+	margin-bottom: 10px;
+}
+.bui-pc-collapse-wrap-horizon{
+	@include box;
+	.bui-pc-collapse{
+		@include box;
+		@include box-horizontal;
+		@include flex;
+		margin-top:0;
+		margin-left: -1px;
+	}
+	.collapse-title{
+		@include box-horizontal;
+	}
+	.collapse-content{
+		width:0;
+		height: auto;
+		.collapse-title{
+			width: 100px;
+		}
+		.collapse-detail{
+			width: 600px;
+			border-top: 0;
+			border-left: 1px solid #ddd;
+		}
+	}
+	.bui-pc-collapse-open{
+		flex: auto;
+		-webkit-flex: auto;
+		-ms-flex: auto;
+		-webkit-box-flex: auto;
+	}
 }

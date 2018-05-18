@@ -21,6 +21,12 @@ render() {
 	        	<Collapse.Panel title="标题2">内容2</Collapse.Panel>
 	        	<Collapse.Panel title="标题3" disabled={true}>内容3</Collapse.Panel>
 	        </Collapse>
+			<br/><div>手风琴模式</div><br/>
+	        <Collapse openIndex="1" accordion={true} direction="horizon">
+	        	<Collapse.Panel title="标题1">内容1</Collapse.Panel>
+	        	<Collapse.Panel title="标题2">内容2</Collapse.Panel>
+	        	<Collapse.Panel title="标题3">内容3</Collapse.Panel>
+	        </Collapse>
 	    </div>
   	);
 }

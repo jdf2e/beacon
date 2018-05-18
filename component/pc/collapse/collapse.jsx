@@ -28,15 +28,17 @@ class Collapse extends React.Component {
     }
    	render() {
         let cls = classnames({
-            
+            'bui-pc-collapse-wrap':true,
+            'bui-pc-collapse-wrap-horizon':(this.props.direction == 'horizon')
         })
         const {
           children,
           openIndex,
         } = this.props;
         const filteredChildren = React.Children.toArray(children).filter(c => !!c);
+                    console.log(this.state.openArr)
      	return (
-            <div className="bui-pc-collapse-wrap">
+            <div className={cls}>
                 {
                     Children.map(filteredChildren, (child, index) => {
                     if (!child) {
@@ -51,6 +53,7 @@ class Collapse extends React.Component {
                         }
                     })
                     childProps.clickHandle = this.clickHandle;
+                    childProps.direction = this.props.direction;
                     childProps.idx = index;
                     
                     return cloneElement(child,childProps);

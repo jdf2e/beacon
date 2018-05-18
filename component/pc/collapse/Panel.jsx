@@ -11,7 +11,10 @@ class Panel extends React.Component {
         }
         this.titleClick = this.titleClick.bind(this);
         this.getHeight = this.getHeight.bind(this);
+        this.getWidth = this.getWidth.bind(this);
         this.openHeight = 0;
+        this.openWidth = 0;
+        this.getSize = (this.props.direction == 'horizon') ? this.getWidth : this.getHeight;
     }
 
     titleClick(ev) {
@@ -23,7 +26,7 @@ class Panel extends React.Component {
         },()=>{
             this.props.clickHandle(this.props.idx)
             this.setState({
-                style: this.getHeight()
+                style: this.getSize()
             }) 
         })
         this.props.clickEvent && this.props.clickEvent();
@@ -36,16 +39,23 @@ class Panel extends React.Component {
         } else {
             styleObj = {height: 0};
         } 
-        // this.setState({
-        //     style: styleObj
-        // })  
+        return styleObj
+    }
+    getWidth() {  
+        let styleObj;   
+        if (this.state.isOpen) {
+            styleObj = {width: this.openWidth + 'px'};  
+        } else {
+            styleObj = {width: 0};
+        } 
         return styleObj
     }
     componentDidMount(){
         setTimeout(()=>{
             this.openHeight = this.refs.collapseDom.offsetHeight - 1; 
+            this.openWidth = this.refs.collapseDom.offsetWidth; 
             this.setState({
-                style: this.getHeight()
+                style: this.getSize()
             }) 
         },30)
     }
@@ -54,7 +64,7 @@ class Panel extends React.Component {
             isOpen : nextProps.isOpen,
         },()=>{
             this.setState({
-                style: this.getHeight()
+                style: this.getSize()
             }) 
         });
     }
