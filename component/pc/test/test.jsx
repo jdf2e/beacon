@@ -22,4 +22,4 @@ Test.defaultProps = {
 Test.propTypes = {
 };
 
-export default Test;
+export default Test; 

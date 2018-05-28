@@ -5,9 +5,9 @@ import Select from './select.jsx';
 import './cascadar.scss';
 class Cascadar extends React.Component {
     constructor(props) {
-        super(props);        
+        super(props);
         this.state = {
-            datas: []
+            datas: props.data            
         }
         this.selectData = [];
     }

@@ -23,6 +23,7 @@ class Select extends React.Component {
         let props = this.props;
         let cls = classnames({
         })
+        console.log(this.state.data);
      	return (
             <select className={cls} onChange={this.selectChange.bind(this)} >
                 <option>{this.props.defaultTxt}</option>
