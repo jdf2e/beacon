@@ -251,6 +251,15 @@
       "author": "杜守珺",
       "erp": "bjdushoujun",
       "email": "dushoujun@jd.com"
+    },
+    {
+      "chinese": "开关",
+      "english": "Switch",
+      "type": "dynamic",
+      "client": "M",
+      "author": "孙印凤",
+      "erp": "sunyinfeng",
+      "email": "sunyinfeng@jd.com"
     }
   ]
 }

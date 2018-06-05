@@ -21,3 +21,4 @@ export { default as Checkbox }from './checkbox/checkbox';
 export { default as Elevator }from './elevator/elevator';
 export { default as Flippage }from './flippage/flippage';
 export { default as Icon }from './icon/icon';
+export { default as Switch }from './switch/switch';

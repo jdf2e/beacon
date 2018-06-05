@@ -2,6 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import classnames from 'classnames';
 import './tab.scss';
+import Panel from './Panel.jsx';
 
 class Tab extends React.Component {
     constructor(props) {
@@ -40,8 +41,8 @@ class Tab extends React.Component {
     render() {
         let props = this.props;
         let tabCls = classnames({
-            'bui-m-tab tabs': true,
-            'tab-vertical': props.type ? true : false
+            'bui-pc-tab tabs': true,
+            'bui-pc-tab-vertical': props.type ? true : false
         });
         return (
             <div className={`${tabCls} ${props.tabCls ? props.tabCls : ''}`}>
@@ -70,4 +71,5 @@ Tab.defaultProps = {
     type: ''
 };
 
+Tab.Panel = Panel;
 export default Tab;

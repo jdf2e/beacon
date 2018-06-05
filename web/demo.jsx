@@ -46,6 +46,7 @@ import IconM from './page/m/icon/icon-demo';
 import IconPC from './page/pc/icon/icon-demo';
 import CollapsePC from './page/pc/collapse/collapse-demo';
 import StepsPC from './page/pc/steps/steps-demo';
+import SwitchM from './page/m/switch/switch-demo';
 
 import './assets/demo.scss';
 import Utils from './../tools/utils';
@@ -102,6 +103,7 @@ const M =  ({ match }) => (
 <Route path={`${match.url}/elevator`} component={ElevatorM}/>
 <Route path={`${match.url}/flippage`} component={FlippageM}/>
 <Route path={`${match.url}/icon`} component={IconM}/>
+<Route path={`${match.url}/switch`} component={SwitchM}/>
 
     </div>
 );

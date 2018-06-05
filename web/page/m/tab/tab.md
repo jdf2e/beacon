@@ -21,20 +21,20 @@ select(tabIndex) {
 render() {
   return (
     <div className="wrapper">
-        <Tab>
-			<Panel
+        <Tab type={'vertical'}>
+			<Tab.Panel
             title={'test1'}>
                 <p>content 0</p>
-            </Panel>
-            <Panel
+            </Tab.Panel>
+            <Tab.Panel
             title={'test2'}
             onTabClick={this.select.bind(this)}>
                 <p>content 1</p>
-            </Panel>
-            <Panel
+            </Tab.Panel>
+            <Tab.Panel
             title={'test3'}>
                 <p>content 2</p>
-            </Panel>
+            </Tab.Panel>
 		</Tab>
     </div>
   );

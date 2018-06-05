@@ -1,7 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { HashRouter, Route} from 'react-router-dom';
-import Footer from './includes/ifooter';
 import Header from './includes/header';
 import Menu from './includes/menu';
 import Index from './page/index/index';
@@ -49,12 +48,13 @@ import IconM from './page/m/icon/icon';
 import IconPC from './page/pc/icon/icon';
 import CollapsePC from './page/pc/collapse/collapse';
 import StepsPC from './page/pc/steps/steps';
+import SwitchM from './page/m/switch/switch';
 
 import './assets/index.scss';
 import Utils from './../tools/utils';
 
 const Pc = ({ match }) => (
-    <div className="content clearfix">
+    <div className="content">
         <Menu type='PC'/>
         <div className="right">
             <Route path={`${match.url}/dialog`} component={DialogPC}/>
@@ -85,7 +85,7 @@ const Pc = ({ match }) => (
 );
 
 const M =  ({ match }) => (
-    <div className="content clearfix">
+    <div className="content">
         <Menu type='M'/>
         <div className="right">
             <Route path={`${match.url}/dialog`} component={DialogM}/>
@@ -110,6 +110,7 @@ const M =  ({ match }) => (
 <Route path={`${match.url}/elevator`} component={ElevatorM}/>
 <Route path={`${match.url}/flippage`} component={FlippageM}/>
 <Route path={`${match.url}/icon`} component={IconM}/>
+<Route path={`${match.url}/switch`} component={SwitchM}/>
 
         </div>
     </div>
@@ -122,7 +123,6 @@ ReactDOM.render((
             <Route path={'/'} exact component={Index} />
             <Route path={'/pc'} component={Pc}/>
             <Route path={'/m'} component={M} />
-            <Footer/>
         </div>
     </HashRouter>
     ),
