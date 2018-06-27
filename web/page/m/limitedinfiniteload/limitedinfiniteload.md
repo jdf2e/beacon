@@ -16,15 +16,17 @@ constructor(props) {
 
 }
 loadMore(closeLoading, page) {
+	console.log(page);
 	const { list } = this.state;
 	const latestList = list.slice(list.length - 20);
 	const newList = latestList.map(item => item + 20);
 	setTimeout(() => {
-		(list.length < 200)
+		(page <= 5)
 		?
 		this.setState({
 			list: [...list, ...newList],
-			page: page
+			page: page,
+			hasMore: page < 5 ? true : false 
 		})
 		:
 		this.setState({
@@ -46,13 +48,12 @@ render() {
 	})
 
 	return (
-	    <div className="wrapper" style={{position: 'fixed', height: '100%', width: '100%'}}>
+	    <div className="wrapper" style={{height: '100%', width: '100%'}}>
 	        <Limitedinfiniteload
 	            hasMore={hasMore}
-				useWindow={false}
+				useWindow={true}
 			    loadMore={this.loadMore.bind(this)}
 			    page={page}
-			    limitValue={5}
 			>
 				{
 					items

@@ -96,7 +96,7 @@ class Limitedinfiniteload extends Component {
     }
 
     scrollListener(type) {
-        const scrollEl = useWindow ? window : this.scroller;
+        const scrollEl = this.props.useWindow ? window : this.scroller;
         const {
             useWindow,
         } = this.props;
@@ -134,7 +134,6 @@ class Limitedinfiniteload extends Component {
                 }
             }
         }
-
         scrollEl.addEventListener('scroll', handleScroll, false);
         scrollEl.addEventListener('resize', handleScroll, false);
     }
