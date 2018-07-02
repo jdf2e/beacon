@@ -8,136 +8,136 @@ class Choose extends React.Component {
         this.state = {
 			data:[],
 			currLevel: 1,//当前tab索引+1，默认显示第一级
-			lis1:[{"id": 1,"name": "北京"},
+			listData:[{"id": 1,"name": "北京"},
                  {"id": 2,"name": "上海"},
-                        {
-                            "id": 3,
-                            "name": "天津"
-                        },
-                        {
-                            "id": 4,
-                            "name": "重庆"
-                        },
-                        {
-                            "id": 5,
-                            "name": "河北"
-                        },
-                        {
-                            "id": 6,
-                            "name": "山西"
-                        },
-                        {
-                            "id": 7,
-                            "name": "河南"
-                        },
-                        {
-                            "id": 8,
-                            "name": "辽宁"
-                        },
-                        {
-                            "id": 9,
-                            "name": "吉林"
-                        },
-                        {
-                            "id": 10,
-                            "name": "黑龙江"
-                        },
-                        {
-                            "id": 11,
-                            "name": "内蒙古"
-                        },
-                        {
-                            "id": 12,
-                            "name": "江苏"
-                        },
-                        {
-                            "id": 13,
-                            "name": "山东"
-                        },
-                        {
-                            "id": 14,
-                            "name": "安徽"
-                        },
-                        {
-                            "id": 15,
-                            "name": "浙江"
-                        },
-                        {
-                            "id": 16,
-                            "name": "福建"
-                        },
-                        {
-                            "id": 17,
-                            "name": "湖北"
-                        },
-                        {
-                            "id": 18,
-                            "name": "湖南"
-                        },
-                        {
-                            "id": 19,
-                            "name": "广东"
-                        },
-                        {
-                            "id": 20,
-                            "name": "广西"
-                        },
-                        {
-                            "id": 21,
-                            "name": "江西"
-                        },
-                        {
-                            "id": 22,
-                            "name": "四川"
-                        },
-                        {
-                            "id": 23,
-                            "name": "海南"
-                        },
-                        {
-                            "id": 24,
-                            "name": "贵州"
-                        },
-                        {
-                            "id": 25,
-                            "name": "云南"
-                        },
-                        {
-                            "id": 26,
-                            "name": "西藏"
-                        },
-                        {
-                            "id": 27,
-                            "name": "陕西"
-                        },
-                        {
-                            "id": 28,
-                            "name": "甘肃"
-                        },
-                        {
-                            "id": 29,
-                            "name": "青海"
-                        },
-                        {
-                            "id": 30,
-                            "name": "宁夏"
-                        },
-                        {
-                            "id": 31,
-                            "name": "新疆"
-                        },
-                        {
-                            "id": 32,
-                            "name": "台湾"
-                        },
-                        {
-                            "id": 84,
-                            "name": "钓鱼岛"
-                        },
-                        {
-                            "id": 52993,
-                            "name": "港澳"
-                        }]
+                {
+                    "id": 3,
+                    "name": "天津"
+                },
+                {
+                    "id": 4,
+                    "name": "重庆"
+                },
+                {
+                    "id": 5,
+                    "name": "河北"
+                },
+                {
+                    "id": 6,
+                    "name": "山西"
+                },
+                {
+                    "id": 7,
+                    "name": "河南"
+                },
+                {
+                    "id": 8,
+                    "name": "辽宁"
+                },
+                {
+                    "id": 9,
+                    "name": "吉林"
+                },
+                {
+                    "id": 10,
+                    "name": "黑龙江"
+                },
+                {
+                    "id": 11,
+                    "name": "内蒙古"
+                },
+                {
+                    "id": 12,
+                    "name": "江苏"
+                },
+                {
+                    "id": 13,
+                    "name": "山东"
+                },
+                {
+                    "id": 14,
+                    "name": "安徽"
+                },
+                {
+                    "id": 15,
+                    "name": "浙江"
+                },
+                {
+                    "id": 16,
+                    "name": "福建"
+                },
+                {
+                    "id": 17,
+                    "name": "湖北"
+                },
+                {
+                    "id": 18,
+                    "name": "湖南"
+                },
+                {
+                    "id": 19,
+                    "name": "广东"
+                },
+                {
+                    "id": 20,
+                    "name": "广西"
+                },
+                {
+                    "id": 21,
+                    "name": "江西"
+                },
+                {
+                    "id": 22,
+                    "name": "四川"
+                },
+                {
+                    "id": 23,
+                    "name": "海南"
+                },
+                {
+                    "id": 24,
+                    "name": "贵州"
+                },
+                {
+                    "id": 25,
+                    "name": "云南"
+                },
+                {
+                    "id": 26,
+                    "name": "西藏"
+                },
+                {
+                    "id": 27,
+                    "name": "陕西"
+                },
+                {
+                    "id": 28,
+                    "name": "甘肃"
+                },
+                {
+                    "id": 29,
+                    "name": "青海"
+                },
+                {
+                    "id": 30,
+                    "name": "宁夏"
+                },
+                {
+                    "id": 31,
+                    "name": "新疆"
+                },
+                {
+                    "id": 32,
+                    "name": "台湾"
+                },
+                {
+                    "id": 84,
+                    "name": "钓鱼岛"
+                },
+                {
+                    "id": 52993,
+                    "name": "港澳"
+                }]
 	    };
     }
    	//关闭选择
@@ -253,10 +253,10 @@ class Choose extends React.Component {
 							}
 						</ul>
 						{
-							state.data.map((item,i)=>{
+							state.listData.map((item,i)=>{
 								if((i+1)!=state.currLevel) return null;
 								let lis = [];
-								let lisData = props.isJDArea?state[`lis${i+1}`]:props[`lis${i+1}`];
+								let lisData = props.listData;
 								(lisData).map((obj,index)=>{
 									lis.push(<li key={index} onClick={self.liClick.bind(self,obj,i)} className={`${item.selectedVal == obj[props.liValKey] ?'curr':''}`} >{obj[props.liTxtKey]}</li>);
 								})
@@ -282,8 +282,7 @@ Choose.defaultProps = {
 	liTxtKey:'name',
 	liValKey: 'id',
 	chooseData: '',
-	isLoading: false,
-	isJDArea: false
+	isLoading: false
 };
 
 Choose.propTypes = {
@@ -293,8 +292,7 @@ Choose.propTypes = {
 	liTxtKey:PropTypes.string,
 	liValKey: PropTypes.string,
 	chooseData: PropTypes.string,
-	isLoading: PropTypes.bool,
-	isJDArea: PropTypes.bool
+	isLoading: PropTypes.bool
 }
 
 export default Choose;
