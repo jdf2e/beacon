@@ -16,7 +16,6 @@ constructor(props) {
 
 }
 loadMore(closeLoading, page) {
-	console.log(page);
 	const { list } = this.state;
 	const latestList = list.slice(list.length - 20);
 	const newList = latestList.map(item => item + 20);
@@ -36,6 +35,13 @@ loadMore(closeLoading, page) {
 	}, 500);
 
 }
+clear() {
+	this.setState({
+		hasMore: true,
+		page: 1,
+		list: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19,20],
+	})
+}
 
 render() {
 	const { list, hasMore, page } = this.state;
@@ -49,6 +55,7 @@ render() {
 
 	return (
 	    <div className="wrapper" style={{height: '100%', width: '100%'}}>
+	    	 <Button type="submit" size="l"  onClick={this.clear.bind(this)}>清空重新加载</Button>
 	        <Limitedinfiniteload
 	            hasMore={hasMore}
 				useWindow={true}

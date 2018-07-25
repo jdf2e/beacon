@@ -79,7 +79,7 @@ class Limitedinfiniteload extends Component {
             limitValue,
             page
         } = this.props;
-        if ((!limitValue || page < limitValue) && this.props.children.length > prevProps.children.length) {
+        if ((!limitValue || page < limitValue) && ((this.props.listCount > prevProps.listCount) || (this.props.children.length > prevProps.children.length))) {
             setTimeout(() => {
                 this.scrollListener()
             }, 0)
@@ -184,6 +184,7 @@ Limitedinfiniteload.defaultProps = {
     hasMore: true,
     threshold: 20,
     page: 0,
+    listCount: 0,
     limitValue: null,
     initialLoad: false,
     useWindow: true,
