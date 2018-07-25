@@ -20,3 +20,5 @@ export { default as Limitedinfiniteload }from './limitedinfiniteload/limitedinfi
 export { default as Icon }from './icon/icon';
 export { default as Collapse }from './collapse/collapse';
 export { default as Steps }from './steps/steps';
+
+export { default as Tree }from './tree/tree';

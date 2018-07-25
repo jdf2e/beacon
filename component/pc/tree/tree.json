@@ -1,0 +1,93 @@
+{
+    "success": true,
+    "errorCode": null,
+    "errorMsg": null,
+    "result": [{
+        "id": 3612,
+        "departmentName": "京东小易",
+        "parentDepartmentId": 0,
+        "parentDepartmentName": null,
+        "memberCount": 41,
+        "departmentCount": 7,
+        "url": null,
+        "expand": false,
+        "nodes": [{
+                "id": 3616,
+                "departmentName": "测试部",
+                "parentDepartmentId": 3612,
+                "parentDepartmentName": "京东小易",
+                "memberCount": 5,
+                "departmentCount": 0,
+                "url": null,
+                "expand": false,
+                "nodes": null
+            },
+            {
+                "id": 3614,
+                "departmentName": "产品部",
+                "parentDepartmentId": 3612,
+                "parentDepartmentName": "京东小易",
+                "memberCount": 3,
+                "departmentCount": 0,
+                "url": null,
+                "expand": false,
+                "nodes": null
+            },
+            {
+                "id": 3613,
+                "departmentName": "技术部",
+                "parentDepartmentId": 3612,
+                "parentDepartmentName": "京东小易",
+                "memberCount": 11,
+                "departmentCount": 0,
+                "url": null,
+                "expand": false,
+                "nodes": null
+            },
+            {
+                "id": 3657,
+                "departmentName": "金融部",
+                "parentDepartmentId": 3612,
+                "parentDepartmentName": "京东小易",
+                "memberCount": 0,
+                "departmentCount": 0,
+                "url": null,
+                "expand": false,
+                "nodes": null
+            },
+            {
+                "id": 3615,
+                "departmentName": "项目管理部",
+                "parentDepartmentId": 3612,
+                "parentDepartmentName": "京东小易",
+                "memberCount": 5,
+                "departmentCount": 0,
+                "url": null,
+                "expand": false,
+                "nodes": null
+            },
+            {
+                "id": 3656,
+                "departmentName": "运营部",
+                "parentDepartmentId": 3612,
+                "parentDepartmentName": "京东小易",
+                "memberCount": 3,
+                "departmentCount": 0,
+                "url": null,
+                "expand": false,
+                "nodes": null
+            },
+            {
+                "id": 3658,
+                "departmentName": "智能货柜",
+                "parentDepartmentId": 3612,
+                "parentDepartmentName": "京东小易",
+                "memberCount": 1,
+                "departmentCount": 0,
+                "url": null,
+                "expand": false,
+                "nodes": null
+            }
+        ]
+    }]
+}

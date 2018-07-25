@@ -47,6 +47,7 @@ import IconPC from './page/pc/icon/icon-demo';
 import CollapsePC from './page/pc/collapse/collapse-demo';
 import StepsPC from './page/pc/steps/steps-demo';
 import SwitchM from './page/m/switch/switch-demo';
+import TreePC from './page/pc/tree/tree-demo';
 
 import './assets/demo.scss';
 import Utils from './../tools/utils';
@@ -75,6 +76,7 @@ const Pc = ({ match }) => (
 <Route path={`${match.url}/icon`} component={IconPC}/>
 <Route path={`${match.url}/collapse`} component={CollapsePC}/>
 <Route path={`${match.url}/steps`} component={StepsPC}/>
+<Route path={`${match.url}/tree`} component={TreePC}/>
 
     </div>
 );

@@ -260,6 +260,15 @@
       "author": "孙印凤",
       "erp": "sunyinfeng",
       "email": "sunyinfeng@jd.com"
+    },
+    {
+      "chinese": "树",
+      "english": "Tree",
+      "type": "dynamic",
+      "client": "PC",
+      "author": "廖艳丽",
+      "erp": "liaoyanli5",
+      "email": "liaoyanli@jd.com"
     }
   ]
 }
